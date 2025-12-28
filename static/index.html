@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SurgiMind AI</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>SurgiMind</h1>
+    <p>AI Surgical Tool Detection</p>
+
+    <input type="file" id="videoInput" accept="video/*" />
+    <button onclick="uploadVideo()">Run Detection</button>
+
+    <!-- ✅ SINGLE status element -->
+    <p id="status"></p>
+    <p class="hint">⏱️ Processing time depends on video length & hardware</p>
+
+    <!-- 🎥 Result video -->
+    <video id="resultVideo" controls hidden></video>
+
+    <!-- ⬇️ Download button -->
+    <a id="downloadBtn" hidden>
+      <button>⬇️ Download Result Video</button>
+    </a>
+  </div>
+
+ <script src="/static/app.js"></script>
+</body>
+</html>
